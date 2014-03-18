@@ -8,6 +8,7 @@ import modelos.Season;
  
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class EntryAdapter extends ArrayAdapter<Item> {
 				v.setOnClickListener(null);
 				v.setOnLongClickListener(null);
 				v.setLongClickable(false);
+				v.setBackgroundColor(Color.GREEN);
 				
 				final TextView sectionView = (TextView) v.findViewById(R.id.list_item_section_text);
 				sectionView.setText("Temporada " + si.getIdSeason());
@@ -50,13 +52,16 @@ public class EntryAdapter extends ArrayAdapter<Item> {
 				Episode ei = (Episode)i;
 				v = vi.inflate(R.layout.list_helper, null);
 				final TextView title = (TextView)v.findViewById(R.id.list_item_entry_title);
-				final TextView subtitle = (TextView)v.findViewById(R.id.list_item_entry_summary);
+			//	final TextView subtitle = (TextView)v.findViewById(R.id.list_item_entry_summary);
 				
-				if (title != null) 
-					title.setText(ei.getName());
-				if(subtitle != null)
-					subtitle.setText(ei.getNumberEpisode());
-			}
+				if (title != null) {
+					title.setText(ei.getNumberEpisode() + " - " + ei.getName());
+				title.setSingleLine(false);
+				}
+				}
+			//	if(subtitle != null)
+			//		subtitle.setText(ei.getNumberEpisode());
+			//}
 		}
 		return v;
 	}

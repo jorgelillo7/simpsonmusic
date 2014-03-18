@@ -50,10 +50,14 @@ public class GuiaEpisodiosActivity extends ListActivity {
         	
         }
          
-        
+        ListView lv = getListView();
+        lv.setFastScrollEnabled(true);
+        lv.setScrollingCacheEnabled(true);
+     
         EntryAdapter adapter = new EntryAdapter(this, items);
         
         setListAdapter(adapter);
+
     }
     
     @Override
