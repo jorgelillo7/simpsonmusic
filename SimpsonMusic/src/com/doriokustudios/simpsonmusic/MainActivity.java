@@ -1,4 +1,4 @@
-package com.lillosoft.simpsonmusic;
+package com.doriokustudios.simpsonmusic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +20,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.CoreProtocolPNames;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import com.lillosoft.simpsonmusic.R;
  
 
 import util.*;

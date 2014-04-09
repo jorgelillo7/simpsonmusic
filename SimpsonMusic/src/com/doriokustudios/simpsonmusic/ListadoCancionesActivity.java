@@ -1,5 +1,7 @@
-package com.lillosoft.simpsonmusic;
+package com.doriokustudios.simpsonmusic;
 
+
+import com.lillosoft.simpsonmusic.R;
 
 import android.app.Activity;
 import android.os.Bundle;

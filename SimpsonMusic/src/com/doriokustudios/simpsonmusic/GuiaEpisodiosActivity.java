@@ -1,6 +1,8 @@
-package com.lillosoft.simpsonmusic;
+package com.doriokustudios.simpsonmusic;
 
 import java.util.ArrayList;
+
+import com.lillosoft.simpsonmusic.R;
 
 import modelos.Episode;
 import modelos.Item;

@@ -1,4 +1,4 @@
-package com.lillosoft.simpsonmusic;
+package com.doriokustudios.simpsonmusic;
 
 import com.lillosoft.simpsonmusic.R;
 
